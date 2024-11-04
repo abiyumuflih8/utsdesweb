@@ -5,7 +5,7 @@ Halo! Ini adalah website Tumpeng Pasid, usaha catering tumpeng yang berlokasi di
 ## Apa aja sih yang ada di website ini? 🤔
 
 ### 1. Halaman Home / Landing Page
-![Halaman Home](URL_TO_HOME_SCREENSHOT)
+![Halaman Home]([URL_TO_HOME_SCREENSHOT](https://github.com/abiyumuflih8/utsdesweb/blob/9a4fe748dc3084883319880484fc1e5d7e6c9743/Screenshot%20(6).png))
 - Ada video background yang bikin tampilan jadi hidup
 - Text judul yang muncul dengan animasi keren
 - Tombol "Pesan Sekarang" yang langsung ngarah ke form pemesanan
