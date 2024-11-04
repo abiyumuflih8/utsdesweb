@@ -19,7 +19,7 @@ Halo! Ini adalah website Tumpeng Pasid, usaha catering tumpeng yang berlokasi di
 - Animasi muncul pas di-scroll
 
 ### 3. Halaman Menu
-![Halaman Menu](URL_TO_MENU_SCREENSHOT)
+![Halaman Menu](https://github.com/abiyumuflih8/utsdesweb/blob/7e4ce94acbe336face090f531cc6aa84e0476de2/Screenshot%20(8).png)
 Di sini kita nampilin:
 - Berbagai pilihan tumpeng (5, 20, dan 25 porsi)
 - Harga yang transparan
