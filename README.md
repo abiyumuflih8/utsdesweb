@@ -36,7 +36,7 @@ Fitur-fitur form pemesanan:
 - Ringkasan pesanan yang update real-time
 
 ### 5. Galeri
-![Halaman Galeri](URL_TO_GALLERY_SCREENSHOT)
+![Halaman Galeri](https://github.com/abiyumuflih8/utsdesweb/blob/b6c40493ab9e13b7bf6df886f187bb72b7ed82ec/Screenshot%20(10).png)
 - Layout grid yang rapi
 - Foto-foto hasil tumpeng kita
 - Efek zoom pas cursor di atas foto
