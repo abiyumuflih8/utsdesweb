@@ -12,7 +12,7 @@ Halo! Ini adalah website Tumpeng Pasid, usaha catering tumpeng yang berlokasi di
 - Navbar yang nempel di atas dan berubah transparan waktu di-scroll
 
 ### 2. Halaman About / Tentang Kami
-![Halaman About](URL_TO_ABOUT_SCREENSHOT)
+![Halaman About](https://github.com/abiyumuflih8/utsdesweb/blob/b8cc0ad396077fb87fd46fc7fac577ec9480fa09/Screenshot%20(7).png)
 - Cerita singkat tentang Tumpeng Pasid
 - Ada slider gambar yang ganti-ganti otomatis
 - Design yang clean dan modern
