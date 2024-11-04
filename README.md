@@ -43,7 +43,7 @@ Fitur-fitur form pemesanan:
 - Responsive di semua ukuran layar
 
 ### 6. Halaman Testimonial
-![Halaman Testimonial](URL_TO_TESTIMONIAL_SCREENSHOT)
+![Halaman Testimonial](https://github.com/abiyumuflih8/utsdesweb/blob/9fa1a3a451ec02a759964a19c92b6f6c04dafdd2/Screenshot%20(11).png)
 - Review dari customer-customer kita
 - Sistem rating bintang
 - Form buat kirim review baru
