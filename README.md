@@ -27,7 +27,7 @@ Di sini kita nampilin:
 - Efek hover yang smooth buat tiap menu
 
 ### 4. Halaman Order / Pemesanan
-![Halaman Order](URL_TO_ORDER_SCREENSHOT)
+![Halaman Order](https://github.com/abiyumuflih8/utsdesweb/blob/8f03e0317166ec97001f838754be13e29ed73fd7/Screenshot%20(9).png)
 Fitur-fitur form pemesanan:
 - Pilihan jenis tumpeng (Regular, Special, Premium)
 - Pilihan ukuran (Small, Medium, Large)
