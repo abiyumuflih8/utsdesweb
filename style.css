@@ -1,0 +1,685 @@
+/* style.css */
+:root {
+    --primary-color: #FF6B6B;
+    --secondary-color: #4ECDC4;
+    --dark-color: #2C3E50;
+    --light-color: #FFFFFF;
+    --gray-color: #F8F9FA;
+    --text-color: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: var(--light-color);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: var(--dark-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+.mobile-menu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--light-color);
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    overflow: hidden;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease 0.3s;
+}
+
+/* About Section */
+.about-section {
+    padding: 100px 0;
+    background: var(--gray-color);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: var(--dark-color);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+/* Menu Section */
+.menu-section {
+    padding: 100px 0;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.menu-item {
+    background: var(--light-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-10px);
+}
+
+.menu-content {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Order Section */
+.order-section {
+    padding: 100px 0;
+    background: var(--gray-color);
+}
+
+.order-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 50px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Gallery Section */
+.gallery-section {
+    padding: 100px 0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.gallery-image {
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 100px 0;
+    background: var(--gray-color);
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+}
+
+.modal-content {
+    position: relative;
+    background: var(--light-color);
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 100px 0;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.contact-item {
+    margin-bottom: 30px;
+}
+
+/* Footer */
+footer {
+    background: var(--dark-color);
+    color: var(--light-color);
+    padding: 50px 0 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+
+.footer-links a {
+    display: block;
+    color: var(--light-color);
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Buttons */
+.primary-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: var(--primary-color);
+    color: var(--light-color);
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.primary-btn:hover {
+    background: darken(var(--primary-color), 10%);
+    transform: translateY(-2px);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .about-grid,
+    .order-grid,
+    .contact-grid,
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+    color: inherit; /* Sesuaikan dengan tema warna kamu */
+    text-decoration: none;
+}
+
+.social-links a i {
+    font-size: 20px; /* Sesuaikan ukuran ikon */
+    margin-right: 8px; /* Jarak antara ikon dan teks */
+}
+
+/* Jika ingin hanya ikon tanpa teks */
+.social-links a {
+    font-size: 0; /* Menyembunyikan teks */
+}
+
+.social-links a i {
+    font-size: 24px; /* Ukuran ikon */
+    margin-right: 0; /* Hilangkan jarak */
+}
+/* Styling dasar navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+/* Menyembunyikan nav-links di layar kecil */
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 2000;
+}
+
+/* Styling untuk ikon garis tiga */
+.mobile-menu span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* Dropdown menu di mode mobile */
+.nav-links.mobile {
+    display: none;
+    position: fixed;
+    top: 50px;
+    right: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+    z-index: 1500;
+}
+
+/* Tampilkan mobile-menu dan sembunyikan nav-links di layar kecil */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .mobile-menu {
+        display: flex;
+    }
+    .nav-links.mobile {
+        display: flex;
+    }
+}
+
+/* Animasi untuk transformasi ikon "X" */
+.mobile-menu.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.mobile-menu.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Styling dasar untuk ikon garis tiga */
+.mobile-menu span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+    border-radius: 3px;
+    transition: all 0.4s ease;
+}
+
+/* Animasi perubahan ikon garis tiga menjadi X */
+.mobile-menu.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.mobile-menu.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Dropdown menu di mode mobile */
+.nav-links.mobile {
+    display: flex;
+    position: fixed;
+    top: 50px;
+    right: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+    z-index: 1500;
+    opacity: 0;
+    transform: translateY(-10%);
+    transition: all 0.4s ease;
+}
+
+/* Menu dropdown muncul dengan animasi */
+.nav-links.mobile.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Atur posisi dan tampilan navbar */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .mobile-menu {
+        display: flex;
+    }
+    .nav-links.mobile {
+        display: flex;
+    }
+}
+
+/* Atur ukuran dan posisi navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px; /* Memberi jarak di sekitar konten navbar */
+    position: fixed; /* Agar navbar tetap di atas saat di-scroll */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #fff; /* Warna latar belakang navbar */
+}
+
+/* Atur ukuran dan posisi logo */
+.logo .logo-image {
+    height: 50px; /* Atur tinggi logo sesuai keinginan */
+    width: auto; /* Menjaga proporsi logo */
+    object-fit: contain; /* Agar logo tetap rapi */
+}
+
+/* Responsif untuk perangkat yang lebih kecil */
+@media (max-width: 768px) {
+    .logo .logo-image {
+        height: 40px; /* Sesuaikan ukuran logo untuk layar kecil */
+    }
+
+    .nav-links {
+        display: none; /* Sembunyikan link navigasi di perangkat kecil, bisa gunakan mobile menu */
+    }
+
+    .mobile-menu {
+        display: block; /* Tampilkan menu mobile */
+    }
+}
+
+/* Atur navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Sebar logo ke kiri dan menu ke kanan */
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+/* Atur logo dan jarak antar elemen */
+.logo {
+    margin-right: auto; /* Memastikan logo tetap di paling kiri */
+}
+
+
+/* Styling untuk ikon garis tiga */
+.mobile-menu {
+    font-size: 24px;
+    cursor: pointer;
+    display: block; /* Selalu tampil */
+}
+
+/* Pastikan link navigasi tetap terlihat di layar tablet */
+.nav-links {
+    display: flex; /* Tampilkan link navigasi pada tablet */
+    gap: 15px; /* Beri jarak antar link */
+}
+
+/* Responsif untuk layar kecil (di bawah 768px) */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Sembunyikan link navigasi di layar kecil */
+    }
+    .mobile-menu {
+        display: block; /* Tetap tampilkan ikon garis tiga */
+    }
+}
+
+/* Styling logo agar berbentuk bulat */
+.logo img {
+    width: 50px; /* Sesuaikan ukuran sesuai kebutuhan */
+    height: 50px;
+    border-radius: 50%; /* Membuat logo berbentuk bulat */
+    border: 2px solid #333; /* Border sesuai kebutuhan */
+    padding: 4px; /* Jarak antara gambar dengan border */
+    object-fit: cover; /* Agar gambar tetap proporsional di dalam border bulat */
+}
+/* CSS untuk Slideshow */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Panah navigasi */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Animasi fade */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
