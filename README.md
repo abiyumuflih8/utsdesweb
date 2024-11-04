@@ -50,7 +50,7 @@ Fitur-fitur form pemesanan:
 - Tampilan yang clean dan mudah dibaca
 
 ### 7. Halaman Contact
-![Halaman Contact](URL_TO_CONTACT_SCREENSHOT)
+![Halaman Contact](https://github.com/abiyumuflih8/utsdesweb/blob/20414777de4f3a5b5ce48e42c7eca3a27577f9e6/Screenshot%20(12).png)
 - Informasi kontak lengkap
 - Alamat fisik toko
 - Link sosial media
